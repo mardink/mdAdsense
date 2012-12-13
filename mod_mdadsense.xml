@@ -24,7 +24,23 @@
 <config>
 <fields name="params">
 	<fieldset name="basic">
-    	<field name="moduleclass_sfx" type="text" default="" label="MOD_MDADSENSE_MCLASS_LABEL" description="MOD_MDADSENSE_MCLASS_DESCR" />
+    	<field name="moduleclass_sfx" type="text" rows="15" default="" label="MOD_MDADSENSE_MCLASS_LABEL" description="MOD_MDADSENSE_MCLASS_DESCR" />
+    	<field name="adsense" type="textarea" default="" rows="10" filter="raw" label="Google Adsense code" description="past you google adsense code in this field" />
+    	<field name="align" type="radio" class="btn-group" default="2" label="Align Add" description="Select position of add">
+    		<option value="1">Left</option>
+			<option value="2">Center</option>
+			<option value="3">Right</option>
+				</field>
+				<field type="spacer" name="myspacer" class="text" label="Responsive design settings. Use the settings below to control with devices need to show the module" />
+		<field name="show" type="radio" class="btn-group" default="1" label="Show or Hide on devices" description="Select position of add">
+    		<option value="1">Visible</option>
+			<option value="2">Hidden</option>
+			</field>
+		<field name="device" type="radio" class="btn-group" default="3" label="Select the device" description="Select position of add">
+    		<option value="1">Phone</option>
+			<option value="2">Tablet</option>
+			<option value="3">Desktop</option>
+			</field>			
 	</fieldset>
 </fields>
 </config>
