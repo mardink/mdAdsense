@@ -6,7 +6,11 @@
 	if ($langSite != '') {
 		$langSite .= '/';
 	}
-// get google adsense conde
+// get moduleclass suffix
+	$moduleclass_sfx = $params->get('moduleclass_sfx');
+	
+	
+	// get google adsense conde
 	$adsense = $params->get('adsense');
 	
 // Define alignment
@@ -15,18 +19,21 @@
 		if ($align == "2") { $alignpos = 'center';} else { $alignpos = 'pull-right';}
 	}
 // define devices to show	
-	$show = $params->get('show');
-	if ($show == "1") { $showstate = 'visible';} else {
-		 $showstate = 'hidden';	}
-	$device = $params->get('device');
-		 if ($device == "1") { $device1 = '-phone';} else {
-		 	if ($device == "2") { $device1 = '-tablet';} else { $device1 = '-desktop';}
-		 }
-$showdevice = "$showstate" . "$device1";
+	$phone = $params->get('phone');
+	if ($phone == "0") { $phonestate = ' hidden-phone';} else {
+		 $phonestate = '';	}
+		 $tablet = $params->get('tablet');
+		 if ($tablet == "0") { $tabletstate = ' hidden-tablet';} else {
+		 	$tabletstate = '';	}
+		 	$desktop = $params->get('desktop');
+		 	if ($desktop == "0") { $desktopstate = ' hidden-desktop';} else {
+		 		$desktopstate = '';	}
 ?>
-<div class="<?php echo $showdevice;?>">
+<div class="<?php echo $moduleclass_sfx;?>">
+<div class="<?php echo $phonestate;?><?php echo $tabletstate;?><?php echo $desktopstate;?>">
 	<div class="<?php echo $alignpos;?>">
 		<?php echo $adsense;?>
 <p></p>
 	</div>
+</div>
 </div>

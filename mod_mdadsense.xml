@@ -31,15 +31,18 @@
 			<option value="2">Center</option>
 			<option value="3">Right</option>
 				</field>
-				<field type="spacer" name="myspacer" class="text" label="Responsive design settings. Use the settings below to control with devices need to show the module" />
-		<field name="show" type="radio" class="btn-group" default="1" label="Show or Hide on devices" description="Select position of add">
-    		<option value="1">Visible</option>
-			<option value="2">Hidden</option>
+				<field type="spacer" name="myspacer" class="text" label="Responsive design settings. Use the settings below to control which devices need to show the module" />
+		<field name="phone" type="radio" class="btn-group" default="1" label="Show or Hide on phones" description="Select if the module needs to be shown on a phone">
+    		<option value="1">Show</option>
+    		<option value="0">Hide</option>
 			</field>
-		<field name="device" type="radio" class="btn-group" default="3" label="Select the device" description="Select position of add">
-    		<option value="1">Phone</option>
-			<option value="2">Tablet</option>
-			<option value="3">Desktop</option>
+		<field name="tablet" type="radio" class="btn-group" default="1" label="Show or Hide on tablets" description="Select if the module needs to be shown on a tablet">
+    		<option value="1">Show</option>
+    		<option value="0">Hide</option>
+			</field>
+		<field name="desktop" type="radio" class="btn-group" default="1" label="Show or Hide on desktop" description="Select if the module needs to be shown on a dektop">
+    		<option value="1">Show</option>
+    		<option value="0">Hide</option>
 			</field>			
 	</fieldset>
 </fields>
