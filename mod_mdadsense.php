@@ -2,7 +2,7 @@
 /**
  * @package Joomla
  * @subpackage mdadsense
- * @copyright (C) 2012 Martijn Hiddink
+ * @copyright (C) 2012 Mardink Webdesign
  * @license GNU/GPL, 
  * mdadsense is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License 3

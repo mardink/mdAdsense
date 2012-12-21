@@ -2,7 +2,7 @@
 <extension type="module" version="1.6.0" client="site" method="upgrade">
     <name>MD Adsense</name>
     <author>M. Hiddink</author>
-	<creationDate>11-12-2012</creationDate>
+	<creationDate>21-12-2012</creationDate>
 	<authorEmail>support@mardinkwebdesign.com</authorEmail>
 	<authorUrl>http://www.mardinkwebdesign.com/</authorUrl>
     <version>1.0.0</version>
@@ -17,7 +17,7 @@
     </files>
  <languages folder="languages">
 <language tag="en-GB">en-GB/en-GB.mod_mdadsense.ini</language>
-<language tag="en-GB">en-GB/en-GB.mod_mddadsense.sys.ini</language>
+<language tag="en-GB">en-GB/en-GB.mod_mdadsense.sys.ini</language>
 <language tag="nl-NL">nl-NL/nl-NL.mod_mdadsense.ini</language>
 <language tag="nl-NL">nl-NL/nl-NL.mod_mdadsensee.sys.ini</language>
 </languages>   
@@ -25,24 +25,24 @@
 <fields name="params">
 	<fieldset name="basic">
     	<field name="moduleclass_sfx" type="text" rows="15" default="" label="MOD_MDADSENSE_MCLASS_LABEL" description="MOD_MDADSENSE_MCLASS_DESCR" />
-    	<field name="adsense" type="textarea" default="" rows="10" filter="raw" label="Google Adsense code" description="past you google adsense code in this field" />
-    	<field name="align" type="radio" class="btn-group" default="2" label="Align Add" description="Select position of add">
-    		<option value="1">Left</option>
-			<option value="2">Center</option>
-			<option value="3">Right</option>
+    	<field name="adsense" type="textarea" default="" rows="10" filter="raw" label="MOD_MDADSENSE_ADSENSE_LABEL" description="MOD_MDADSENSE_ADSENSE_DESCR" />
+    	<field name="align" type="radio" class="btn-group" default="2" label="MOD_MDADSENSE_ALIGN_LABEL" description="MOD_MDADSENSE_ALIGN_DESCR">
+    		<option value="1">MOD_MDADSENSE_ALIGN_LEFT</option>
+			<option value="2">MOD_MDADSENSE_ALIGN_CENTER</option>
+			<option value="3">MOD_MDADSENSE_ALIGN_RIGHT</option>
 				</field>
-				<field type="spacer" name="myspacer" class="text" label="Responsive design settings. Use the settings below to control which devices need to show the module" />
-		<field name="phone" type="radio" class="btn-group" default="1" label="Show or Hide on phones" description="Select if the module needs to be shown on a phone">
-    		<option value="1">Show</option>
-    		<option value="0">Hide</option>
+				<field type="spacer" name="myspacer" class="text" label="MOD_MDADSENSE_RESPONSIVE_LABEL" />
+		<field name="phone" type="radio" class="btn-group" default="1" label="MOD_MDADSENSE_PHONE_LABEL" description="MOD_MDADSENSE_PHONE_DESCR">
+    		<option value="1">MOD_MDADSENSE_SHOW</option>
+    		<option value="0">MOD_MDADSENSE_HIDE</option>
 			</field>
-		<field name="tablet" type="radio" class="btn-group" default="1" label="Show or Hide on tablets" description="Select if the module needs to be shown on a tablet">
-    		<option value="1">Show</option>
-    		<option value="0">Hide</option>
+		<field name="tablet" type="radio" class="btn-group" default="1" label="MOD_MDADSENSE_TABLET_LABEL" description="MOD_MDADSENSE_TABLET_DESCR">
+    		<option value="1">MOD_MDADSENSE_SHOW</option>
+    		<option value="0">MOD_MDADSENSE_HIDE</option>
 			</field>
-		<field name="desktop" type="radio" class="btn-group" default="1" label="Show or Hide on desktop" description="Select if the module needs to be shown on a dektop">
-    		<option value="1">Show</option>
-    		<option value="0">Hide</option>
+		<field name="desktop" type="radio" class="btn-group" default="1" label="MOD_MDADSENSE_DESKTOP_LABEL" description="MOD_MDADSENSE_DESKTOP_DESCR">
+    		<option value="1">MOD_MDADSENSE_SHOW</option>
+    		<option value="0">MOD_MDADSENSE_HIDE</option>
 			</field>			
 	</fieldset>
 </fields>
