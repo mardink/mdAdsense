@@ -2,10 +2,10 @@
 <extension type="module" version="1.6.0" client="site" method="upgrade">
     <name>MD Adsense</name>
     <author>M. Hiddink</author>
-	<creationDate>21-12-2012</creationDate>
+	<creationDate>16-05-2013</creationDate>
 	<authorEmail>support@mardinkwebdesign.com</authorEmail>
 	<authorUrl>http://www.mardinkwebdesign.com/</authorUrl>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <licence>GNU/GPL http://www.gnu.org/licenses/gpl.html</licence>
 	<description>MOD_MDADSENSE_DESCRIPTION</description>
 	
@@ -47,4 +47,8 @@
 	</fieldset>
 </fields>
 </config>
+<updateservers>
+    <server type="extension" priority="1"
+        name="MDAdsense Update"><![CDATA[http://www.mardinkwebdesign.com/index.php?option=com_ars&view=update&task=stream&format=xml&id=5&dummy=extension.xml]]></server>
+</updateservers>
 </extension>
