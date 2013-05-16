@@ -43,7 +43,7 @@
 		 	if ($desktop == "0") { $desktopstate = ' hidden-desktop';} else {
 		 		$desktopstate = '';	}
 ?>
-<div class="<?php echo $moduleclass_sfx;?>">
+<div class="mdadsense <?php echo $moduleclass_sfx;?>">
 <div class="<?php echo $phonestate;?><?php echo $tabletstate;?><?php echo $desktopstate;?>">
 	<div class="<?php echo $alignpos;?>">
 		<?php echo $adsense;?>
