@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="1.6.0" client="site" method="upgrade">
+<extension type="module" version="2.5.0" client="site" method="upgrade">
     <name>MD Adsense</name>
     <author>M. Hiddink</author>
-	<creationDate>16-05-2013</creationDate>
+	<creationDate>27-05-2013</creationDate>
 	<authorEmail>support@mardinkwebdesign.com</authorEmail>
 	<authorUrl>http://www.mardinkwebdesign.com/</authorUrl>
-    <version>1.1.0</version>
-    <licence>GNU/GPL http://www.gnu.org/licenses/gpl.html</licence>
+    <version>1.1.1</version>
+    <license>GNU GPL v3 or later</license>
 	<description>MOD_MDADSENSE_DESCRIPTION</description>
 	
     <files>
